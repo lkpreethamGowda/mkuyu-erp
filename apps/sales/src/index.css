@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef6f3;
+  --color-brand-100: #d7eae3;
+  --color-brand-200: #b9ddcf;
+  --color-brand-500: #24745d;
+  --color-brand-600: #195f4b;
+  --color-brand-700: #134c3d;
+  --color-brand-800: #173f34;
+  --color-brand-900: #15372f;
+}
+
+:root {
+  color: #17211e;
+  background: #f4f6f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Aptos, "Segoe UI Variable", "Segoe UI", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f6f5;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+::selection {
+  background: #b9ddcf;
+  color: #15372f;
+}
+
+:focus-visible {
+  outline: 3px solid rgb(36 116 93 / 24%);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-color: #b8c4c0 transparent;
+  scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
